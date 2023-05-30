@@ -4,7 +4,7 @@ ab = 10
 bc = 10
 
 
-def calculateAngle(ab: int, bc: int):
+def calculateAngle(ab: int, bc: int)-> int:
     """calculateAngle _summary_
 
     Args:
@@ -12,7 +12,7 @@ def calculateAngle(ab: int, bc: int):
         bc (int): _description_
 
     Returns:
-        _type_: _description_
+        int: _description_
     """
     ac = pow(pow(ab, 2) + pow(bc, 2), 0.5)
     return round(math.atan(ab / ac) * (180 / math.pi))
